@@ -47,7 +47,7 @@ const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, sleep } =
 */
 
 async function startNazeBot() {
-	const { state, saveCreds } = await useMultiFileAuthState('nazedev');
+	const { state, saveCreds } = await useMultiFileAuthState('chiko');
 	const { version, isLatest } = await fetchLatestBaileysVersion();
 	const level = pino({ level: 'silent' });
 	
