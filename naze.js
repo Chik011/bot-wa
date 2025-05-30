@@ -1490,7 +1490,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			
 			// Bot Menu
 			case 'owner': {
-				await naze.sendContact(m.chat, owner, m);
+				await chiko.sendContact(m.chat, owner, m);
 			}
 			break
 			case 'profile': case 'cek': {
