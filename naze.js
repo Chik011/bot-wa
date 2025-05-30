@@ -1881,7 +1881,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 				m.reply(mess.wait)
 				let media = await quoted.download()
 				let audio = await toAudio(media, 'mp4')
-				await m.reply({ document: audio, mimetype: 'audio/mpeg', fileName: `Convert By Naze Bot.mp3`})
+				await m.reply({ document: audio, mimetype: 'audio/mpeg', fileName: `Convert By Laurens.mp3`})
 			}
 			break
 			case 'tovn': case 'toptt': case 'tovoice': {
@@ -3862,7 +3862,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 ├ *Money* : ${db.users[m.sender] ? db.users[m.sender].money.toLocaleString('id-ID') : '0'}
 ╰─┬────❍
 ╭─┴─❍「 *BOT INFO* 」❍
-├ *Nama Bot* : ${botname}
+├ *Nama Bot* : ${Laurens}
 ├ *Powered* : @${'0@s.whatsapp.net'.split('@')[0]}
 ├ *Owner* : @${owner[0].split('@')[0]}
 ├ *Mode* : ${naze.public ? 'Public' : 'Self'}
