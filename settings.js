@@ -37,8 +37,7 @@ global.my = {
 
 global.limit = {
 	free: 20,
-	premium: 999,
-	vip: 9999
+	premium: 999,j
 }
 
 global.money = {
