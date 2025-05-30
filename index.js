@@ -47,7 +47,7 @@ const { isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, sleep } =
 */
 
 async function startNazeBot() {
-	const { state, saveCreds } = await useMultiFileAuthState('chiko');
+	const { state, saveCreds } = await useMultiFileAuthState('nazedev');
 	const { version, isLatest } = await fetchLatestBaileysVersion();
 	const level = pino({ level: 'silent' });
 	
@@ -106,7 +106,7 @@ async function startNazeBot() {
 			return msg?.message || ''
 		}
 		return {
-			conversation: 'Halo Saya Laurens'
+			conversation: 'Halo Saya Naze Bot'
 		}
 	}
 	

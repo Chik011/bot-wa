@@ -83,10 +83,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chik011/bot-wa.git"
+    "url": "git+https://github.com/nazedev/hitori.git"
   },
   "bugs": {
-    "url": "https://github.com/Chik011/bot-wa/issues"
+    "url": "https://github.com/nazedev/hitori/issues"
   },
-  "homepage": "https://github.com/Chik011/bot-wa#readme"
+  "homepage": "https://github.com/nazedev/hitori#readme"
 }

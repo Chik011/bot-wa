@@ -134,7 +134,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 				remoteJid: '0@s.whatsapp.net',
 				participant: '0@s.whatsapp.net',
 				fromMe: false,
-				id: 'chiko'
+				id: 'Naze'
 			},
 			message: {
 				contactMessage: {
@@ -1206,7 +1206,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			}
 			break
 			case 'sc': case 'script': {
-				await m.reply(`https://github.com/Chik011/bot-wa\n⬆️ Itu Sc nya cuy`, {
+				await m.reply(`https://github.com/nazedev/hitori\n⬆️ Itu Sc nya cuy`, {
 					contextInfo: {
 						forwardingScore: 10,
 						isForwarded: true,
@@ -1228,7 +1228,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			}
 			break
 			case 'donasi': case 'donate': {
-				// m.reply('Donasi Dapat Melalui Url Dibawah Ini :\nhttps://saweria.co/naze')
+				m.reply('Donasi Dapat Melalui Url Dibawah Ini :\nhttps://saweria.co/naze')
 			}
 			break
 			
@@ -1490,7 +1490,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			
 			// Bot Menu
 			case 'owner': {
-				await chiko.sendContact(m.chat, owner, m);
+				await naze.sendContact(m.chat, owner, m);
 			}
 			break
 			case 'profile': case 'cek': {
@@ -1881,7 +1881,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 				m.reply(mess.wait)
 				let media = await quoted.download()
 				let audio = await toAudio(media, 'mp4')
-				await m.reply({ document: audio, mimetype: 'audio/mpeg', fileName: `Convert By Laurens.mp3`})
+				await m.reply({ document: audio, mimetype: 'audio/mpeg', fileName: `Convert By Naze Bot.mp3`})
 			}
 			break
 			case 'tovn': case 'toptt': case 'tovoice': {
@@ -2354,7 +2354,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			break
 			case 'tinyurl': case 'shorturl': case 'shortlink': {
 				if (!isLimit) return m.reply(mess.limit)
-				if (!text || !isUrl(text)) return m.reply(`Example: ${prefix + command} https://github.com/Chik011/bot-wa`)
+				if (!text || !isUrl(text)) return m.reply(`Example: ${prefix + command} https://github.com/nazedev/hitori`)
 				try {
 					let anu = await axios.get('https://tinyurl.com/api-create.php?url=' + text)
 					m.reply('Url : ' + anu.data)
@@ -2366,7 +2366,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 			break
 			case 'git': case 'gitclone': {
 				if (!isLimit) return m.reply(mess.limit)
-				if (!args[0]) return m.reply(`Example: ${prefix + command} https://github.com/Chik011/bot-wa`)
+				if (!args[0]) return m.reply(`Example: ${prefix + command} https://github.com/nazedev/hitori`)
 				if (!isUrl(args[0]) && !args[0].includes('github.com')) return m.reply('Gunakan Url Github!')
 				let [, user, repo] = args[0].match(/(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i) || []
 				try {
@@ -3862,7 +3862,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 ├ *Money* : ${db.users[m.sender] ? db.users[m.sender].money.toLocaleString('id-ID') : '0'}
 ╰─┬────❍
 ╭─┴─❍「 *BOT INFO* 」❍
-├ *Nama Bot* : ${Laurens}
+├ *Nama Bot* : ${botname}
 ├ *Powered* : @${'0@s.whatsapp.net'.split('@')[0]}
 ├ *Owner* : @${owner[0].split('@')[0]}
 ├ *Mode* : ${naze.public ? 'Public' : 'Self'}
@@ -4483,7 +4483,7 @@ module.exports = naze = async (naze, m, msg, store, groupCache) => {
 		if (msg) {
 			m.reply(msg + '\n\nError: ' + (e?.name || e?.code || e?.output?.statusCode || e?.status || 'Tidak diketahui') + '\nLog Error Telah dikirim ke Owner\n\n')
 		}
-		return naze.sendFrom( `Halo sayang, sepertinya ada yang error nih, jangan lupa diperbaiki ya\n\nVersion : *${require('./package.json').version}*\n\n*Log error:*\n\n` + util.format(e), m, { contextInfo: { isForwarded: true }})
+		return naze.sendFromOwner(owner, `Halo sayang, sepertinya ada yang error nih, jangan lupa diperbaiki ya\n\nVersion : *${require('./package.json').version}*\n\n*Log error:*\n\n` + util.format(e), m, { contextInfo: { isForwarded: true }})
 	}
 }
 

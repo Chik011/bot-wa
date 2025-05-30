@@ -11,7 +11,7 @@ const chalk = require('chalk');
 
 global.owner = ['62895329092414'] //['628','628'] 2 owner atau lebih
 global.packname = 'Bot WhatsApp'
-global.author = 'Chiko'
+global.author = 'chiko'
 global.botname = 'Laurens'
 global.listprefix = ['+','!','.']
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
@@ -23,21 +23,22 @@ global.number_bot = '' // Kalo pake panel bisa masukin nomer di sini, jika belum
 global.fake = {
 	anonim: 'https://telegra.ph/file/95670d63378f7f4210f03.png',
 	thumbnailUrl: 'https://telegra.ph/file/fe4843a1261fc414542c4.jpg',
-	// thumbnail: fs.readFileSync('./src/media/naze.png'),
-	// docs: fs.readFileSync('./src/media/fake.pdf'),
+	thumbnail: fs.readFileSync('./src/media/naze.png'),
+	docs: fs.readFileSync('./src/media/fake.pdf'),
 	listfakedocs: ['application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/vnd.openxmlformats-officedocument.presentationml.presentation','application/vnd.openxmlformats-officedocument.wordprocessingml.document','application/pdf'],
 }
 
 global.my = {
-	// yt: 'https://youtube.com/c/Nazedev',
-	// gh: 'https://github.com/nazedev',
-	// gc: 'https://chat.whatsapp.com/B5qJIwZHm4VEYZJQE6iMwy',
-	// ch: '120363250409960161@newsletter',
+	yt: 'https://youtube.com/c/Nazedev',
+	gh: 'https://github.com/nazedev',
+	gc: 'https://chat.whatsapp.com/B5qJIwZHm4VEYZJQE6iMwy',
+	ch: '120363250409960161@newsletter',
 }
 
 global.limit = {
 	free: 20,
-	premium: 999,j
+	premium: 999,
+	vip: 9999
 }
 
 global.money = {
@@ -47,7 +48,7 @@ global.money = {
 }
 
 global.mess = {
-	// key: 'Apikey mu telah habis silahkan kunjungi\nhttps://my.hitori.pw',
+	key: 'Apikey mu telah habis silahkan kunjungi\nhttps://my.hitori.pw',
 	owner: 'Fitur Khusus Owner!',
 	admin: 'Fitur Khusus Admin!',
 	botAdmin: 'Bot Bukan Admin!',
@@ -61,7 +62,7 @@ global.mess = {
 }
 
 global.APIs = {
-	// hitori: 'https://api.hitori.pw',
+	hitori: 'https://api.hitori.pw',
 }
 global.APIKeys = {
 	'https://api.hitori.pw': 'htrkey-77eb83c0eeb39d40',
