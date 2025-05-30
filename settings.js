@@ -29,10 +29,10 @@ global.fake = {
 }
 
 global.my = {
-	yt: 'https://youtube.com/c/Nazedev',
-	gh: 'https://github.com/nazedev',
-	gc: 'https://chat.whatsapp.com/B5qJIwZHm4VEYZJQE6iMwy',
-	ch: '120363250409960161@newsletter',
+	// yt: 'https://youtube.com/c/Nazedev',
+	// gh: 'https://github.com/nazedev',
+	// gc: 'https://chat.whatsapp.com/B5qJIwZHm4VEYZJQE6iMwy',
+	// ch: '120363250409960161@newsletter',
 }
 
 global.limit = {
@@ -48,7 +48,7 @@ global.money = {
 }
 
 global.mess = {
-	key: 'Apikey mu telah habis silahkan kunjungi\nhttps://my.hitori.pw',
+	// key: 'Apikey mu telah habis silahkan kunjungi\nhttps://my.hitori.pw',
 	owner: 'Fitur Khusus Owner!',
 	admin: 'Fitur Khusus Admin!',
 	botAdmin: 'Bot Bukan Admin!',
@@ -62,7 +62,7 @@ global.mess = {
 }
 
 global.APIs = {
-	hitori: 'https://api.hitori.pw',
+	// hitori: 'https://api.hitori.pw',
 }
 global.APIKeys = {
 	'https://api.hitori.pw': 'htrkey-77eb83c0eeb39d40',
